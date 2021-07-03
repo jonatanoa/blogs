@@ -1,0 +1,143 @@
+@import '~bootstrap/scss/bootstrap';
+
+.small-container{
+    width:100%;
+    max-width: 650px;
+}
+.large-container{
+    width: 100%;
+    max-width: 960px;
+}
+.center-block{
+    margin:0 auto;
+}
+.padding{
+    padding:10px 15px;
+}
+
+.margin-top{
+    margin-top: 1.5em;
+}
+
+.container{
+    margin-top: 4rem
+}
+
+.container-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-show{
+    @extend .container-index;
+    margin-top: 10rem;
+    border-radius: 6px;
+    border: solid #2700ff54;
+    width: 50%;
+}
+
+.btn-1{
+    justify-content: center;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.field{
+    @extend .margin-top;
+    width: 50%;
+    margin: 0 auto;
+    label{
+        @extend .text-uppercase;
+        @extend .text-secondary;
+    }
+    &:first-of-type{
+        margin-top: 0;
+    }
+    input{
+        @extend .form-control;
+        @extend .bg-light;
+    }
+    input[type='checkbox']{
+        display: inline-block;
+        width:auto;
+        vertical-align: middle;
+        margin-right: 0.5em;
+    }
+}
+.card{
+    width: 40%;
+}
+
+//sign-in
+
+
+.title-sign-in{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.btn-sign-in{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+.conditionals-sign-in{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.remember-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+//category
+.btn-2{
+    justify-content: center;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.categorias{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 50%;
+    flex-direction: column;
+    margin: 0 23%;
+    color: #6c757d;
+}
+
+.col-sm-3{
+    margin: 0 25px;
+}
+
+.title-category{
+    margin: 0 25%;
+    margin-top: 1rem;
+    color: #6c757d;
+}
+
+.container-show-categories{
+    @extend .container-index;
+    margin-top: 10rem;
+    border-radius: 6px;
+    border: solid #2700ff54;
+    width: 50%;
+}
+
+.btn-3{
+    justify-content: center;
+    display: flex;
+}

@@ -1,0 +1,27 @@
+<div class="container-show">
+    <h1><%=@article.title%></h1>
+    <%=image_tag url_for(current_user.avatar), height: 150%>
+    <div>
+        <%=@article.content%>
+    </div>
+
+    <div class="margin-top">
+        <p class="label">Tags</p>
+        <% @article.categories.each do |category|%>
+            <span class="badge badge-pill padding" style="background-color:<%=category.color%>">
+                <%= link_to  category.title, category, class:"text-white" %>
+            </span>
+        <% end %>
+    </div>
+
+    <div>
+        <p>Escrito por: <strong><%=@article.user.username%></strong> </p>
+    </div>
+    
+    <div>
+        <%= link_to "Eliminar articulo", @article, method: :delete %>
+    </div>
+     <div>
+        <%= link_to "Editar articulo", edit_article_path(@article) %>
+    </div>
+</div>
